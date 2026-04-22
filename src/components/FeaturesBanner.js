@@ -2,24 +2,18 @@ import React from "react";
 import styled, { keyframes } from "styled-components";
 import {
   FaAward,
-  FaClipboardCheck,
-  FaUserClock,
-  FaRocket,
+  FaBalanceScale,
+  FaUserTie,
+  FaHandshake,
   FaGavel,
   FaChartLine,
-  FaHandHoldingUsd,
-  FaPercent,
+  FaCoins,
+  FaRegCreditCard,
 } from "react-icons/fa";
-
-const float = keyframes`
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-8px); }
-  100% { transform: translateY(0px); }
-`;
 
 const FeaturesBannerStyles = styled.div`
   padding: 2rem 0;
-  background-color: #000;
+  background-color: var(--primary-bg);
 
   .features__wrapper {
     display: grid;
@@ -28,18 +22,21 @@ const FeaturesBannerStyles = styled.div`
   }
 
   .features__item {
-    padding: 2rem;
-    border-radius: 12px;
+    padding: 2.5rem;
+    background-color: var(--secondary-bg);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
     text-align: left;
-    transition: 0.3s ease;
+    transition: all 0.3s ease;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
 
     &:hover {
-      transform: scale(1.05);
-      border-color: var(--gray-1);
+      transform: translateY(-5px);
+      border-color: var(--accent-gold);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
     }
   }
 
@@ -48,16 +45,14 @@ const FeaturesBannerStyles = styled.div`
     width: 8rem;
     height: 8rem;
     flex-shrink: 0;
-    border-radius: 50%;
-    background-color: var(--gray-2);
+    border-radius: 12px;
+    background-color: rgba(197, 160, 89, 0.1); /* Fondo dorado muy sutil */
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 0;
     margin-right: 1.5rem;
-    color: var(--gray-1);
-    /* Aplicamos la animación aquí */
-    animation: ${float} 3s ease-in-out infinite;
+    color: var(--accent-gold);
     svg {
       width: 5rem;
       height: 5rem;
@@ -65,10 +60,11 @@ const FeaturesBannerStyles = styled.div`
   }
 
   .features__title {
-    font-size: 1.4rem;
-    font-family: "Montserrat SemiBold";
-    color: var(--gray-1);
+    font-size: 1.3rem;
+    font-family: "Montserrat SemiBold", sans-serif;
+    color: var(--text-light);
     text-transform: uppercase;
+    letter-spacing: 1px;
     line-height: 1.5;
   }
 
@@ -87,22 +83,30 @@ const FeaturesBannerStyles = styled.div`
 
 export default function FeaturesBanner() {
   const features = [
-    { id: 1, icon: <FaAward />, title: "Alta especialización y experiencia" },
-    { id: 2, icon: <FaClipboardCheck />, title: "Comprobamos Viabilidad" },
-    { id: 3, icon: <FaUserClock />, title: "Atención personalizada y puntual" },
-    { id: 4, icon: <FaRocket />, title: "Agilizamos procesos al máximo" },
+    { id: 1, icon: <FaAward />, title: "Alta especialización y trayectoria" },
+    {
+      id: 2,
+      icon: <FaBalanceScale />,
+      title: "Análisis técnico de Viabilidad",
+    },
+    { id: 3, icon: <FaUserTie />, title: "Atención personalizada" },
+    { id: 4, icon: <FaHandshake />, title: "Gestión procesal ágil" },
     {
       id: 5,
       icon: <FaGavel />,
-      title: "Dirigimos con eficiencia muchos casos al año",
+      title: "Eficiencia en litigios complejos",
     },
-    { id: 6, icon: <FaChartLine />, title: "ALTO % ÉXITO" },
+    { id: 6, icon: <FaChartLine />, title: "Alto índice de éxito" },
     {
       id: 7,
-      icon: <FaHandHoldingUsd />,
-      title: "Honorarios Económicos Ajustados",
+      icon: <FaCoins />,
+      title: "Honorarios profesionales competitivos",
     },
-    { id: 8, icon: <FaPercent />, title: "Pagos Fraccionados | 0% Intereses" },
+    {
+      id: 8,
+      icon: <FaRegCreditCard />,
+      title: "Facilidades de pago | 0% Interés",
+    },
   ];
 
   return (
