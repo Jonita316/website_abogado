@@ -141,122 +141,76 @@ export default function Penal() {
         </p>
         <div className="top-section">
           <div className="left__left">
-            <Link
-              to="/asesoramiento-legal-investigacion-penal"
-              style={{ textDecoration: "none" }}
-            >
-              <ContactInfoItem
-                icon={<FaBalanceScale />}
-                text="ASESORAMIENTO LEGAL EN CASO DE INVESTIGACIÓN PENAL"
-              />
-            </Link>
-            <Link
-              to="/defensa-en-caso-de-juicio-penal"
-              style={{ textDecoration: "none" }}
-            >
-              <ContactInfoItem
-                icon={<MdAccountBalance />}
-                text="DEFENSA EN CASO DE JUICIO PENAL"
-              />
-            </Link>
-            <Link
-              to="/representacion-en-caso-de-apelacion"
-              style={{ textDecoration: "none" }}
-            >
-              <ContactInfoItem
-                icon={<FaBalanceScaleLeft />}
-                text="REPRESENTACIÓN EN CASO DE APELACIÓN"
-              />
-            </Link>
-            <Link
-              to="/negociacion-de-acuerdos-con-la-fiscalia"
-              style={{ textDecoration: "none" }}
-            >
-              <ContactInfoItem
-                icon={<CgFileDocument />}
-                text="NEGOCIACIÓN DE ACUERDOS CON LA FISCALÍA"
-              />
-            </Link>
-            <Link
-              to="/solicitud-de-medidas-cautelares"
-              style={{ textDecoration: "none" }}
-            >
-              <ContactInfoItem
-                icon={<FaBalanceScaleRight />}
-                text="SOLICITUD DE MEDIDAS CAUTELARES"
-              />
-            </Link>
-            <Link to="/recursos-penales" style={{ textDecoration: "none" }}>
-              <ContactInfoItem
-                icon={<FaBalanceScale />}
-                text="RECURSOS PENALES"
-              />
-            </Link>
-            <Link
-              to="/indultos-y-conmutaciones-de-penas"
-              style={{ textDecoration: "none" }}
-            >
-              <ContactInfoItem
-                icon={<MdAccountBalance />}
-                text="INDULTOS Y CONMUTACIONES DE PENAS"
-              />
-            </Link>
+            <ContactInfoItem
+              icon={<FaBalanceScale />}
+              text="ASESORAMIENTO LEGAL EN CASO DE INVESTIGACIÓN PENAL"
+            />
+
+            <ContactInfoItem
+              icon={<MdAccountBalance />}
+              text="DEFENSA EN CASO DE JUICIO PENAL"
+            />
+
+            <ContactInfoItem
+              icon={<FaBalanceScaleLeft />}
+              text="REPRESENTACIÓN EN CASO DE APELACIÓN"
+            />
+
+            <ContactInfoItem
+              icon={<CgFileDocument />}
+              text="NEGOCIACIÓN DE ACUERDOS CON LA FISCALÍA"
+            />
+
+            <ContactInfoItem
+              icon={<FaBalanceScaleRight />}
+              text="SOLICITUD DE MEDIDAS CAUTELARES"
+            />
+
+            <ContactInfoItem
+              icon={<FaBalanceScale />}
+              text="RECURSOS PENALES"
+            />
+
+            <ContactInfoItem
+              icon={<MdAccountBalance />}
+              text="INDULTOS Y CONMUTACIONES DE PENAS"
+            />
           </div>
           <div className="right__right">
-            <Link to="/reparacion-del-dano" style={{ textDecoration: "none" }}>
-              <ContactInfoItem
-                icon={<FaBalanceScale />}
-                text="REPARACIÓN DEL DAÑO"
-              />
-            </Link>
-            <Link
-              to="/delitos-contra-las-personas-y-la-vida"
-              style={{ textDecoration: "none" }}
-            >
-              <ContactInfoItem
-                icon={<MdAccountBalance />}
-                text="DELITOS CONTRA LAS PERSONAS Y LA VIDA"
-              />
-            </Link>
-            <Link
-              to="/delitos-contra-el-patrimonio"
-              style={{ textDecoration: "none" }}
-            >
-              <ContactInfoItem
-                icon={<FaBalanceScaleLeft />}
-                text="DELITOS CONTRA EL PATRIMONIO"
-              />
-            </Link>
-            <Link
-              to="/delitos-contra-la-administracion-publica"
-              style={{ textDecoration: "none" }}
-            >
-              <ContactInfoItem
-                icon={<CgFileDocument />}
-                text="DELITOS CONTRA LA ADMINISTRACIÓN PÚBLICA"
-              />
-            </Link>
-            <Link to="/delitos-informaticos" style={{ textDecoration: "none" }}>
-              <ContactInfoItem
-                icon={<FaBalanceScaleRight />}
-                text="DELITOS INFORMÁTICOS"
-              />
-            </Link>
-            <Link to="/delitos-economicos" style={{ textDecoration: "none" }}>
-              <ContactInfoItem
-                icon={<FaBalanceScale />}
-                text="DELITOS ECONÓMICOS"
-              />
-            </Link>
-            <Link
-              to="/delitos-internacionales"
-              style={{ textDecoration: "none" }}
-            >
-              <ContactInfoItem
-                icon={<MdAccountBalance />}
-                text="DELITOS INTERNACIONALES"
-              />
-            </Link>
+            <ContactInfoItem
+              icon={<FaBalanceScale />}
+              text="REPARACIÓN DEL DAÑO"
+            />
+
+            <ContactInfoItem
+              icon={<MdAccountBalance />}
+              text="DELITOS CONTRA LAS PERSONAS Y LA VIDA"
+            />
+
+            <ContactInfoItem
+              icon={<FaBalanceScaleLeft />}
+              text="DELITOS CONTRA EL PATRIMONIO"
+            />
+
+            <ContactInfoItem
+              icon={<CgFileDocument />}
+              text="DELITOS CONTRA LA ADMINISTRACIÓN PÚBLICA"
+            />
+
+            <ContactInfoItem
+              icon={<FaBalanceScaleRight />}
+              text="DELITOS INFORMÁTICOS"
+            />
+
+            <ContactInfoItem
+              icon={<FaBalanceScale />}
+              text="DELITOS ECONÓMICOS"
+            />
+
+            <ContactInfoItem
+              icon={<MdAccountBalance />}
+              text="DELITOS INTERNACIONALES"
+            />
           </div>
         </div>
       </div>

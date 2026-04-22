@@ -18,20 +18,6 @@ import Ambiental from "./pages/Ambiental";
 import Herencias from "./pages/Herencias";
 import Inmobiliarios from "./pages/Inmobiliarios";
 import SmoothScrollbar from "./components/SmoothScrollbar";
-import AsesoramientoLegalInvestigacionPenal from "./pages/SubPaginas/Penal/ASESORAMIENTO_LEGAL_EN_CASO_DE_INVESTIGACIÓN_PENAL";
-import DefensaEnCasoDeJuicioPenal from "./pages/SubPaginas/Penal/DEFENSA_EN_CASO_DE_JUICIO_PENAL";
-import RepresentacionEnCasoDeApelacion from "./pages/SubPaginas/Penal/REPRESENTACION_EN_CASO_DE_APELACION";
-import NegociacionDeAcuerdosConLaFiscalia from "./pages/SubPaginas/Penal/NEGOCIACION_DE_ACUERDOS_CON_LA_FISCALIA";
-import SolicitudDeMedidasCautelares from "./pages/SubPaginas/Penal/SOLICITUD_DE_MEDIDAS_CAUTELARES";
-import RecursosPenales from "./pages/SubPaginas/Penal/RECURSOS_PENALES";
-import IndultosYConmutacionesDePenas from "./pages/SubPaginas/Penal/INDULTOS_Y_CONMUTACIONES_DE_PENAS";
-import ReparacionDelDano from "./pages/SubPaginas/Penal/REPARACION_DEL_DANO";
-import DelitosContraLasPersonasYLaVida from "./pages/SubPaginas/Penal/DELITOS_CONTRA_LAS_PERSONAS_Y_LA_VIDA";
-import DelitosContraElPatrimonio from "./pages/SubPaginas/Penal/DELITOS_CONTRA_EL_PATRIMONIO";
-import DelitosContraLaAdministracionPublica from "./pages/SubPaginas/Penal/DELITOS_CONTRA_LA_ADMINISTRACION_PUBLICA";
-import DelitosInformaticos from "./pages/SubPaginas/Penal/DELITOS_INFORMATICOS";
-import DelitosEconomicos from "./pages/SubPaginas/Penal/DELITOS_ECONOMICOS";
-import DelitosInternacionales from "./pages/SubPaginas/Penal/DELITOS_INTERNACIONALES";
 
 export default function App() {
   return (
@@ -49,53 +35,7 @@ export default function App() {
           <Route path="/divorcio" element={<Divorcio />} />
           <Route path="/familia" element={<Familia />} />
           <Route path="/penal" element={<Penal />} />
-          <Route
-            path="/asesoramiento-legal-investigacion-penal"
-            element={<AsesoramientoLegalInvestigacionPenal />}
-          />
-          <Route
-            path="/defensa-en-caso-de-juicio-penal"
-            element={<DefensaEnCasoDeJuicioPenal />}
-          />
-          <Route
-            path="/representacion-en-caso-de-apelacion"
-            element={<RepresentacionEnCasoDeApelacion />}
-          />
-          <Route
-            path="/negociacion-de-acuerdos-con-la-fiscalia"
-            element={<NegociacionDeAcuerdosConLaFiscalia />}
-          />
-          <Route
-            path="/solicitud-de-medidas-cautelares"
-            element={<SolicitudDeMedidasCautelares />}
-          />
-          <Route path="/recursos-penales" element={<RecursosPenales />} />
-          <Route
-            path="/indultos-y-conmutaciones-de-penas"
-            element={<IndultosYConmutacionesDePenas />}
-          />
-          <Route path="/reparacion-del-dano" element={<ReparacionDelDano />} />
-          <Route
-            path="/delitos-contra-las-personas-y-la-vida"
-            element={<DelitosContraLasPersonasYLaVida />}
-          />
-          <Route
-            path="/delitos-contra-el-patrimonio"
-            element={<DelitosContraElPatrimonio />}
-          />
-          <Route
-            path="/delitos-contra-la-administracion-publica"
-            element={<DelitosContraLaAdministracionPublica />}
-          />
-          <Route
-            path="/delitos-informaticos"
-            element={<DelitosInformaticos />}
-          />
-          <Route path="/delitos-economicos" element={<DelitosEconomicos />} />
-          <Route
-            path="/delitos-internacionales"
-            element={<DelitosInternacionales />}
-          />
+
           <Route path="/ConsultaLegal" element={<ConsultaLegal />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
