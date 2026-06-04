@@ -327,6 +327,10 @@ const ConsultaLegalStyles = styled.div`
       border-color: var(--gray-1);
       background-color: #000;
     }
+    &::-webkit-calendar-picker-indicator {
+      filter: invert(1);
+      cursor: pointer;
+    }
   }
   .form__textarea {
     resize: vertical;
