@@ -151,9 +151,6 @@ export default function About() {
               <span className="info-line">
                 <strong>NOMBRE:</strong> JOSÉ GABRIEL RODRÍGUEZ MERINO
               </span>
-              <span className="info-line">
-                <strong>CÉDULA:</strong> 1715792451
-              </span>
 
               <span className="info-line">
                 <strong>TELÉFONO:</strong> 0993972833
