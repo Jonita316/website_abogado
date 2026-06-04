@@ -79,6 +79,7 @@ const ConsultationBannerStyles = styled.div`
     color: var(--gray-1);
     text-transform: uppercase;
     line-height: 1.5;
+    text-shadow: -0.2rem 0.1rem rgba(0, 0, 0, 0.5);
   }
 
   /* Responsividad */

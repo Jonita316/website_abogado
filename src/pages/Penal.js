@@ -18,6 +18,7 @@ const PenalPageStyles = styled.div`
     align-items: center;
     justify-content: center;
     gap: 2rem;
+    text-shadow: -0.2rem 0.1rem rgba(0, 0, 0, 0.5);
   }
   .left {
     flex: 3;

@@ -31,6 +31,9 @@ const AdvantagesStyles = styled.div`
     margin-bottom: 3rem;
     font-size: 2.5rem;
     text-align: center;
+    span {
+      text-shadow: -0.2rem 0.1rem rgba(0, 0, 0, 0.5);
+    }
   }
   .top-section {
     display: flex;
@@ -41,6 +44,7 @@ const AdvantagesStyles = styled.div`
   .left__left,
   .right__right {
     flex: 1; /* Each column takes up equal space */
+    text-shadow: -0.2rem 0.1rem rgba(0, 0, 0, 0.5);
   }
 
   /* Responsive Styles */

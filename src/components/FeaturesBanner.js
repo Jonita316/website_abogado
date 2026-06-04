@@ -83,6 +83,7 @@ const FeaturesBannerStyles = styled.div`
     text-transform: uppercase;
     letter-spacing: 1px;
     line-height: 1.5;
+    text-shadow: -0.2rem 0.1rem rgba(0, 0, 0, 0.5);
   }
 
   /* Responsividad */
