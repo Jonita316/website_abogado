@@ -541,31 +541,31 @@ export default function ConsultaLegal() {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!formData.name)
-      return setError("Por favor, llene el campo: Nombres Completos");
+      return setError("POR FAVOR, LLENE EL CAMPO: NOMBRES COMPLETOS");
     if (!formData.phone)
-      return setError("Por favor, llene el campo: Teléfono de Contacto");
+      return setError("POR FAVOR, LLENE EL CAMPO: TELÉFONO DE CONTACTO");
     if (!formData.email)
-      return setError("Por favor, llene el campo: Correo Electrónico");
+      return setError("POR FAVOR, LLENE EL CAMPO: CORREO ELECTRÓNICO");
     if (!formData.city)
-      return setError("Por favor, llene el campo: Ciudad de Residencia");
+      return setError("POR FAVOR, LLENE EL CAMPO: CIUDAD DE RESIDENCIA");
     if (!formData.subject)
-      return setError("Por favor, llene el campo: Asunto Legal");
+      return setError("POR FAVOR, LLENE EL CAMPO: ASUNTO LEGAL");
     if (!formData.message)
-      return setError("Por favor, llene el campo: Detalle de la Consulta");
+      return setError("POR FAVOR, LLENE EL CAMPO: DETALLE DE LA CONSULTA");
 
     // Número de WhatsApp del abogado (incluir código de país sin el '+')
     const lawyerPhoneNumber = "593968873896";
 
     const message = `
-*Nueva Consulta Legal (Formulario Web)*
+*NUEVA CONSULTA LEGAL (FORMULARIO WEB)*
 
-*Nombres:* ${formData.name}
-*Teléfono:* ${formData.phone}
-*Email:* ${formData.email}
-*Ciudad:* ${formData.city}
-*Asunto:* ${formData.subject}
+*NOMBRES:* ${formData.name}
+*TELÉFONO:* ${formData.phone}
+*EMAIL:* ${formData.email}
+*CIUDAD:* ${formData.city}
+*ASUNTO:* ${formData.subject}
 
-*Mensaje:*
+*MENSAJE:*
 ${formData.message}
     `.trim();
 
@@ -584,26 +584,26 @@ ${formData.message}
       message: "",
     });
     setSuccessMessage(
-      "¡Su formulario ha sido enviado correctamente! En breve atenderé su solicitud.",
+      "¡SU FORMULARIO HA SIDO ENVIADO CORRECTAMENTE! EN BREVE ATENDERÉ SU SOLICITUD.",
     );
   };
 
   const handleAppointmentSubmit = (e) => {
     e.preventDefault();
     if (!appointmentData.name)
-      return setAppointmentError("Por favor, ingrese sus Nombres Completos");
+      return setAppointmentError("POR FAVOR, INGRESE SUS NOMBRES COMPLETOS");
     if (!appointmentData.phone)
-      return setAppointmentError("Por favor, ingrese su Teléfono");
+      return setAppointmentError("POR FAVOR, INGRESE SU TELÉFONO");
     if (!appointmentData.date)
-      return setAppointmentError("Por favor, seleccione una Fecha");
+      return setAppointmentError("POR FAVOR, SELECCIONE UNA FECHA");
     if (!appointmentData.time)
-      return setAppointmentError("Por favor, seleccione una Hora");
+      return setAppointmentError("POR FAVOR, SELECCIONE UNA HORA");
     if (!appointmentData.area)
-      return setAppointmentError("Por favor, seleccione un Área Legal");
+      return setAppointmentError("POR FAVOR, SELECCIONE UN ÁREA LEGAL");
     if (!appointmentData.subject)
-      return setAppointmentError("Por favor, ingrese el Asunto");
+      return setAppointmentError("POR FAVOR, INGRESE EL ASUNTO");
     if (!appointmentData.message)
-      return setAppointmentError("Por favor, detalle su consulta");
+      return setAppointmentError("POR FAVOR, DETALLE SU CONSULTA");
 
     const lawyerPhoneNumber = "593968873896";
 
@@ -636,7 +636,7 @@ ${appointmentData.message}
       subject: "",
       message: "",
     });
-    setAppointmentSuccess("La solicitud de su cita ha sido enviada.");
+    setAppointmentSuccess("LA SOLICITUD DE SU CITA HA SIDO ENVIADA.");
   };
 
   const timeOptions = [];
@@ -664,18 +664,18 @@ ${appointmentData.message}
               PROCEDIMIENTO PARA REALIZAR SU CONSULTA JURÍDICA
             </h2>
             <p className="consulta__info-text">
-              Si usted enfrenta una situación legal compleja y requiere
-              asistencia profesional, estoy presto a brindarle el soporte
-              necesario. Absolveré sus inquietudes con prontitud a través de mis
-              canales de comunicación habilitados. Pongo a su disposición una
-              Asesoría Jurídica Integral. Cabe destacar que, si me confía el
-              patrocinio de su causa, el valor de la consulta será abonado a los
-              honorarios totales del proceso. Asegure sus derechos con la mejor
-              defensa técnica.
+              SI USTED ENFRENTA UNA SITUACIÓN LEGAL COMPLEJA Y REQUIERE
+              ASISTENCIA PROFESIONAL, ESTOY PRESTO A BRINDARLE EL SOPORTE
+              NECESARIO. ABSOLVERÉ SUS INQUIETUDES CON PRONTITUD A TRAVÉS DE MIS
+              CANALES DE COMUNICACIÓN HABILITADOS. PONGO A SU DISPOSICIÓN UNA
+              ASESORÍA JURÍDICA INTEGRAL. CABE DESTACAR QUE, SI ME CONFÍA EL
+              PATROCINIO DE SU CAUSA, EL VALOR DE LA CONSULTA SERÁ ABONADO A LOS
+              HONORARIOS TOTALES DEL PROCESO. ASEGURE SUS DERECHOS CON LA MEJOR
+              DEFENSA TÉCNICA.
             </p>
             <h3 className="consulta__methods-heading">
-              Deje su caso en manos de expertos y consulte en el menor tiempo
-              posible.
+              DEJE SU CASO EN MANOS DE EXPERTOS Y CONSULTE EN EL MENOR TIEMPO
+              POSIBLE.
             </h3>
           </div>
           <div className="consulta__methods-grid">
@@ -705,28 +705,28 @@ ${appointmentData.message}
                 <MdChat className="consulta__process-icon" />
                 <h3 className="consulta__process-title">EXPOSICIÓN DEL CASO</h3>
                 <p className="consulta__process-desc">
-                  Exponga los antecedentes de su controversia. Recomiendo la vía
-                  telefónica por su celeridad; alternativamente, puede agendar
-                  una cita en mi Despacho Jurídico o utilizar mis canales
-                  digitales.
+                  EXPONGA LOS ANTECEDENTES DE SU CONTROVERSIA. RECOMIENDO LA VÍA
+                  TELEFÓNICA POR SU CELERIDAD; ALTERNATIVAMENTE, PUEDE AGENDAR
+                  UNA CITA EN MI DESPACHO JURÍDICO O UTILIZAR MIS CANALES
+                  DIGITALES.
                 </p>
               </div>
               <div className="consulta__process-item">
                 <MdManageSearch className="consulta__process-icon" />
                 <h3 className="consulta__process-title">ANÁLISIS JURÍDICO</h3>
                 <p className="consulta__process-desc">
-                  Examinaré la normativa y jurisprudencia aplicable. Realizaré
-                  un diagnóstico legal preciso para determinar la viabilidad y
-                  estrategia de su defensa.
+                  EXAMINARÉ LA NORMATIVA Y JURISPRUDENCIA APLICABLE. REALIZARÉ
+                  UN DIAGNÓSTICO LEGAL PRECISO PARA DETERMINAR LA VIABILIDAD Y
+                  ESTRATEGIA DE SU DEFENSA.
                 </p>
               </div>
               <div className="consulta__process-item">
                 <MdCheckCircle className="consulta__process-icon" />
                 <h3 className="consulta__process-title">RESOLUCIÓN EFECTIVA</h3>
                 <p className="consulta__process-desc">
-                  Proveeré la solución jurídica idónea. Absolveré sus consultas
-                  y trazaré la hoja de ruta procesal necesaria para la tutela
-                  efectiva de sus derechos.
+                  PROVEERÉ LA SOLUCIÓN JURÍDICA IDÓNEA. ABSOLVERÉ SUS CONSULTAS
+                  Y TRAZARÉ LA HOJA DE RUTA PROCESAL NECESARIA PARA LA TUTELA
+                  EFECTIVA DE SUS DERECHOS.
                 </p>
               </div>
             </div>
@@ -740,32 +740,32 @@ ${appointmentData.message}
                 <div className="consulta__phone-item">
                   <MdOutlineFactCheck className="consulta__phone-icon" />
                   <p className="consulta__phone-text">
-                    <strong>ORIENTACIÓN ESTRATÉGICA:</strong> Le indicaré la
-                    hoja de ruta procesal más adecuada para la defensa de sus
-                    intereses.
+                    <strong>ORIENTACIÓN ESTRATÉGICA:</strong> LE INDICARÉ LA
+                    HOJA DE RUTA PROCESAL MÁS ADECUADA PARA LA DEFENSA DE SUS
+                    INTERESES.
                   </p>
                 </div>
                 <div className="consulta__phone-item">
                   <MdVerifiedUser className="consulta__phone-icon" />
                   <p className="consulta__phone-text">
-                    <strong>ATENCIÓN PERSONALIZADA:</strong> La excelencia y el
-                    trato directo son los pilares de mi servicio legal.
+                    <strong>ATENCIÓN PERSONALIZADA:</strong> LA EXCELENCIA Y EL
+                    TRATO DIRECTO SON LOS PILARES DE MI SERVICIO LEGAL.
                   </p>
                 </div>
                 <div className="consulta__phone-item">
                   <MdGavel className="consulta__phone-icon" />
                   <p className="consulta__phone-text">
-                    <strong>ESPECIALIZACIÓN JURÍDICA:</strong> Analizaré su caso
-                    personalmente, aplicando mi experiencia en la materia
-                    consultada.
+                    <strong>ESPECIALIZACIÓN JURÍDICA:</strong> ANALIZARÉ SU CASO
+                    PERSONALMENTE, APLICANDO MI EXPERIENCIA EN LA MATERIA
+                    CONSULTADA.
                   </p>
                 </div>
                 <div className="consulta__phone-item">
                   <MdPhoneInTalk className="consulta__phone-icon" />
                   <p className="consulta__phone-text">
-                    <strong>CELERIDAD Y EFICACIA:</strong> Mediante la consulta
-                    telefónica, obtendrá una respuesta ágil y oportuna a sus
-                    inquietudes.
+                    <strong>CELERIDAD Y EFICACIA:</strong> MEDIANTE LA CONSULTA
+                    TELEFÓNICA, OBTENDRÁ UNA RESPUESTA ÁGIL Y OPORTUNA A SUS
+                    INQUIETUDES.
                   </p>
                 </div>
               </div>
@@ -796,22 +796,22 @@ ${appointmentData.message}
                 <div className="consulta__phone-item">
                   <MdSend className="consulta__phone-icon" />
                   <p className="consulta__phone-text">
-                    <strong>COMUNICACIÓN INMEDIATA:</strong> Establezca contacto
-                    directo conmigo para una atención oportuna.
+                    <strong>COMUNICACIÓN INMEDIATA:</strong> ESTABLEZCA CONTACTO
+                    DIRECTO CONMIGO PARA UNA ATENCIÓN OPORTUNA.
                   </p>
                 </div>
                 <div className="consulta__phone-item">
                   <MdWorkspacePremium className="consulta__phone-icon" />
                   <p className="consulta__phone-text">
-                    <strong>ASESORAMIENTO DE VALOR:</strong> Reciba orientación
-                    jurídica precisa y fundamentada para su caso.
+                    <strong>ASESORAMIENTO DE VALOR:</strong> RECIBA ORIENTACIÓN
+                    JURÍDICA PRECISA Y FUNDAMENTADA PARA SU CASO.
                   </p>
                 </div>
                 <div className="consulta__phone-item">
                   <MdAccessTime className="consulta__phone-icon" />
                   <p className="consulta__phone-text">
-                    <strong>HORARIOS DE ATENCIÓN:</strong> Atenderé sus mensajes
-                    y consultas dentro del horario profesional establecido.
+                    <strong>HORARIOS DE ATENCIÓN:</strong> ATENDERÉ SUS MENSAJES
+                    Y CONSULTAS DENTRO DEL HORARIO PROFESIONAL ESTABLECIDO.
                   </p>
                 </div>
               </div>
@@ -827,21 +827,21 @@ ${appointmentData.message}
               <div className="form__grid">
                 <div className="form__group">
                   <label htmlFor="name" className="form__label">
-                    Nombres Completos
+                    NOMBRES COMPLETOS
                   </label>
                   <input
                     type="text"
                     id="name"
                     name="name"
                     className="form__input"
-                    placeholder="Su nombre aquí"
+                    placeholder="SU NOMBRE AQUÍ"
                     value={formData.name}
                     onChange={handleChange}
                   />
                 </div>
                 <div className="form__group">
                   <label htmlFor="phone" className="form__label">
-                    Teléfono de Contacto
+                    TELÉFONO DE CONTACTO
                   </label>
                   <input
                     type="text"
@@ -855,55 +855,55 @@ ${appointmentData.message}
                 </div>
                 <div className="form__group">
                   <label htmlFor="email" className="form__label">
-                    Correo Electrónico
+                    CORREO ELECTRÓNICO
                   </label>
                   <input
                     type="email"
                     id="email"
                     name="email"
                     className="form__input"
-                    placeholder="correo@ejemplo.com"
+                    placeholder="CORREO@EJEMPLO.COM"
                     value={formData.email}
                     onChange={handleChange}
                   />
                 </div>
                 <div className="form__group">
                   <label htmlFor="city" className="form__label">
-                    Ciudad de Residencia
+                    CIUDAD DE RESIDENCIA
                   </label>
                   <input
                     type="text"
                     id="city"
                     name="city"
                     className="form__input"
-                    placeholder="Quito, Guayaquil..."
+                    placeholder="QUITO, GUAYAQUIL..."
                     value={formData.city}
                     onChange={handleChange}
                   />
                 </div>
                 <div className="form__group full-width">
                   <label htmlFor="subject" className="form__label">
-                    Asunto Legal
+                    ASUNTO LEGAL
                   </label>
                   <input
                     type="text"
                     id="subject"
                     name="subject"
                     className="form__input"
-                    placeholder="Divorcio, Herencia, Penal..."
+                    placeholder="DIVORCIO, HERENCIA, PENAL..."
                     value={formData.subject}
                     onChange={handleChange}
                   />
                 </div>
                 <div className="form__group full-width">
                   <label htmlFor="message" className="form__label">
-                    Detalle de la Consulta
+                    DETALLE DE LA CONSULTA
                   </label>
                   <textarea
                     id="message"
                     name="message"
                     className="form__textarea"
-                    placeholder="Describa brevemente su situación legal para poder asistirle mejor..."
+                    placeholder="DESCRIBA BREVEMENTE SU SITUACIÓN LEGAL PARA PODER ASISTIRLE MEJOR..."
                     value={formData.message}
                     onChange={handleChange}
                   ></textarea>
@@ -919,8 +919,8 @@ ${appointmentData.message}
 
           <div className="appointment__section">
             <h2 className="appointment__heading">
-              Para consultas – citas presenciales es indispensable concertar
-              cita previa
+              PARA CONSULTAS – CITAS PRESENCIALES ES INDISPENSABLE CONCERTAR
+              CITA PREVIA
             </h2>
             <div className="appointment__grid">
               <div className="consulta__form">
@@ -937,21 +937,21 @@ ${appointmentData.message}
                   <div className="form__grid">
                     <div className="form__group">
                       <label htmlFor="apptName" className="form__label">
-                        Nombres Completos
+                        NOMBRES COMPLETOS
                       </label>
                       <input
                         type="text"
                         id="apptName"
                         name="name"
                         className="form__input"
-                        placeholder="Su nombre aquí"
+                        placeholder="SU NOMBRE AQUÍ"
                         value={appointmentData.name}
                         onChange={handleAppointmentChange}
                       />
                     </div>
                     <div className="form__group">
                       <label htmlFor="apptPhone" className="form__label">
-                        Teléfono
+                        TELÉFONO
                       </label>
                       <input
                         type="text"
@@ -965,7 +965,7 @@ ${appointmentData.message}
                     </div>
                     <div className="form__group">
                       <label htmlFor="apptDate" className="form__label">
-                        Fecha de Cita
+                        FECHA DE CITA
                       </label>
                       <input
                         type="date"
@@ -978,7 +978,7 @@ ${appointmentData.message}
                     </div>
                     <div className="form__group">
                       <label htmlFor="apptTime" className="form__label">
-                        Hora (08:00 - 18:00)
+                        HORA (08:00 - 18:00)
                       </label>
                       <select
                         id="apptTime"
@@ -987,7 +987,7 @@ ${appointmentData.message}
                         value={appointmentData.time}
                         onChange={handleAppointmentChange}
                       >
-                        <option value="">Seleccione hora</option>
+                        <option value="">SELECCIONE HORA</option>
                         {timeOptions.map((time) => (
                           <option key={time} value={time}>
                             {time}
@@ -997,7 +997,7 @@ ${appointmentData.message}
                     </div>
                     <div className="form__group full-width">
                       <label htmlFor="apptArea" className="form__label">
-                        Área Legal de Interés
+                        ÁREA LEGAL DE INTERÉS
                       </label>
                       <select
                         id="apptArea"
@@ -1006,44 +1006,44 @@ ${appointmentData.message}
                         value={appointmentData.area}
                         onChange={handleAppointmentChange}
                       >
-                        <option value="">Seleccione un área</option>
-                        <option value="Penal">Derecho Penal</option>
-                        <option value="Familia">Derecho de Familia</option>
-                        <option value="Divorcio">Divorcios</option>
-                        <option value="Laboral">Derecho Laboral</option>
-                        <option value="Civil">Derecho Civil</option>
-                        <option value="Mercantil">Derecho Mercantil</option>
-                        <option value="Tributario">Derecho Tributario</option>
-                        <option value="Ambiental">Derecho Ambiental</option>
-                        <option value="Herencias">Herencias</option>
+                        <option value="">SELECCIONE UN ÁREA</option>
+                        <option value="Penal">DERECHO PENAL</option>
+                        <option value="Familia">DERECHO DE FAMILIA</option>
+                        <option value="Divorcio">DIVORCIOS</option>
+                        <option value="Laboral">DERECHO LABORAL</option>
+                        <option value="Civil">DERECHO CIVIL</option>
+                        <option value="Mercantil">DERECHO MERCANTIL</option>
+                        <option value="Tributario">DERECHO TRIBUTARIO</option>
+                        <option value="Ambiental">DERECHO AMBIENTAL</option>
+                        <option value="Herencias">HERENCIAS</option>
                         <option value="Inmobiliario">
-                          Derecho Inmobiliario
+                          DERECHO INMOBILIARIO
                         </option>
                       </select>
                     </div>
                     <div className="form__group full-width">
                       <label htmlFor="apptSubject" className="form__label">
-                        Asunto
+                        ASUNTO
                       </label>
                       <input
                         type="text"
                         id="apptSubject"
                         name="subject"
                         className="form__input"
-                        placeholder="Breve motivo de la cita"
+                        placeholder="BREVE MOTIVO DE LA CITA"
                         value={appointmentData.subject}
                         onChange={handleAppointmentChange}
                       />
                     </div>
                     <div className="form__group full-width">
                       <label htmlFor="apptMessage" className="form__label">
-                        Mensaje Adicional
+                        MENSAJE ADICIONAL
                       </label>
                       <textarea
                         id="apptMessage"
                         name="message"
                         className="form__textarea"
-                        placeholder="Detalles adicionales..."
+                        placeholder="DETALLES ADICIONALES..."
                         value={appointmentData.message}
                         onChange={handleAppointmentChange}
                       ></textarea>
@@ -1057,34 +1057,34 @@ ${appointmentData.message}
                 </form>
               </div>
               <div className="appointment__info">
-                <h3 className="appointment__info-title">Cita Presencial</h3>
+                <h3 className="appointment__info-title">CITA PRESENCIAL</h3>
                 <div className="appointment__info-item">
                   <MdLocationOn className="appointment__icon" />
                   <p className="appointment__text">
-                    <strong>CONSULTA PRESENCIAL:</strong> Consulta presencial en
-                    mi Despacho Jurídico.
+                    <strong>CONSULTA PRESENCIAL:</strong> CONSULTA PRESENCIAL EN
+                    MI DESPACHO JURÍDICO.
                   </p>
                 </div>
                 <div className="appointment__info-item">
                   <MdFlashOn className="appointment__icon" />
                   <p className="appointment__text">
-                    <strong>EFICACIA Y RAPIDEZ:</strong> Es la vía más eficaz y
-                    rápida para valorar y realizar el estudio preliminar de su
-                    caso.
+                    <strong>EFICACIA Y RAPIDEZ:</strong> ES LA VÍA MÁS EFICAZ Y
+                    RÁPIDA PARA VALORAR Y REALIZAR EL ESTUDIO PRELIMINAR DE SU
+                    CASO.
                   </p>
                 </div>
                 <div className="appointment__info-item">
                   <MdPerson className="appointment__icon" />
                   <p className="appointment__text">
-                    <strong>ATENCIÓN PERSONALIZADA:</strong> Le atenderé
-                    personalmente en mi oficina situada en el centro de Quito.
+                    <strong>ATENCIÓN PERSONALIZADA:</strong> LE ATENDERÉ
+                    PERSONALMENTE EN MI OFICINA SITUADA EN EL CENTRO DE QUITO.
                   </p>
                 </div>
                 <div className="appointment__info-item">
                   <MdStar className="appointment__icon" />
                   <p className="appointment__text">
-                    <strong>ATENCIÓN AL CLIENTE:</strong> Me esfuerzo en dar la
-                    mejor atención a mis clientes. Es mi compromiso profesional.
+                    <strong>ATENCIÓN AL CLIENTE:</strong> ME ESFUERZO EN DAR LA
+                    MEJOR ATENCIÓN A MIS CLIENTES. ES MI COMPROMISO PROFESIONAL.
                   </p>
                 </div>
               </div>
