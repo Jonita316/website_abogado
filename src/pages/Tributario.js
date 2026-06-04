@@ -13,7 +13,6 @@ import {
   FaGavel,
   FaClipboardList,
 } from "react-icons/fa";
-import { CgFileDocument } from "react-icons/cg";
 import ContactBanner from "../components/ContactBanner";
 
 const TributarioPageStyles = styled.div`
