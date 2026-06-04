@@ -3,11 +3,18 @@ import styled from "styled-components";
 import PText from "../components/PText";
 import AmbientalImg from "../assets/images/ambiental.png";
 import ContactInfoItem from "../components/ContactInfoItem";
-import { FaBalanceScale } from "react-icons/fa";
-import { MdAccountBalance } from "react-icons/md";
-import { FaBalanceScaleLeft } from "react-icons/fa";
-import { CgFileDocument } from "react-icons/cg";
-import { FaBalanceScaleRight } from "react-icons/fa";
+import {
+  FaTree,
+  FaFileSignature,
+  FaClipboardCheck,
+  FaGavel,
+  FaBinoculars,
+  FaHandshake,
+  FaBiohazard,
+  FaRecycle,
+  FaSeedling,
+  FaChartPie,
+} from "react-icons/fa";
 import ContactBanner from "../components/ContactBanner";
 
 const AmbientalPageStyles = styled.div`
@@ -127,7 +134,7 @@ export default function Ambiental() {
             </div>
           </div>
           <div className="right">
-            <img src={AmbientalImg} alt="penal" />
+            <img src={AmbientalImg} alt="ambiental" />
           </div>
         </div>
       </div>
@@ -141,47 +148,43 @@ export default function Ambiental() {
         <div className="top-section">
           <div className="left__left">
             <ContactInfoItem
-              icon={<FaBalanceScale />}
+              icon={<FaTree />}
               text="EVALUACIÓN Y GESTIÓN DE IMPACTO AMBIENTAL"
             />
             <ContactInfoItem
-              icon={<MdAccountBalance />}
+              icon={<FaFileSignature />}
               text="LICENCIAS Y PERMISOS AMBIENTALES"
             />
             <ContactInfoItem
-              icon={<FaBalanceScaleLeft />}
+              icon={<FaClipboardCheck />}
               text="CUMPLIMIENTO DE NORMAS AMBIENTALES"
             />
+            <ContactInfoItem icon={<FaGavel />} text="LITIGIOS AMBIENTALES" />
             <ContactInfoItem
-              icon={<CgFileDocument />}
-              text="LITIGIOS AMBIENTALES"
-            />
-            <ContactInfoItem
-              icon={<FaBalanceScaleRight />}
+              icon={<FaBinoculars />}
               text="INFORMES DE MONITOREOS"
             />
           </div>
           <div className="right__right">
             <ContactInfoItem
-              icon={<FaBalanceScale />}
+              icon={<FaHandshake />}
               text="NEGOCIACIÓN DE ACUERDOS AMBIENTALES CON TERCEROS"
             />
             <ContactInfoItem
-              icon={<MdAccountBalance />}
+              icon={<FaBiohazard />}
               text="GESTIÓN DE REGISTROS DE GENERADOR DE DESECHOS PELIGROSOS"
             />
             <ContactInfoItem
-              icon={<FaBalanceScaleLeft />}
+              icon={<FaRecycle />}
               text="PERMISOS DE MANEJO DE RESIDUOS"
             />
             <ContactInfoItem
-              icon={<CgFileDocument />}
+              icon={<FaSeedling />}
               text="BUENAS PRÁCTICAS AMBIENTALES"
             />
             <ContactInfoItem
-              icon={<FaBalanceScaleRight />}
-              text="INFORMES DE FACTIBILIDAD AMBIENTAL
-"
+              icon={<FaChartPie />}
+              text="INFORMES DE FACTIBILIDAD AMBIENTAL"
             />
           </div>
         </div>

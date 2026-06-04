@@ -3,11 +3,24 @@ import styled from "styled-components";
 import PText from "../components/PText";
 import LaboralImg from "../assets/images/laboral.png";
 import ContactInfoItem from "../components/ContactInfoItem";
-import { FaBalanceScale } from "react-icons/fa";
-import { MdAccountBalance } from "react-icons/md";
-import { FaBalanceScaleLeft } from "react-icons/fa";
+import {
+  FaBalanceScale,
+  FaFileSignature,
+  FaUsers,
+  FaGavel,
+  FaUserSlash,
+  FaExclamationCircle,
+  FaShieldAlt,
+  FaIdCard,
+  FaHandHoldingUsd,
+  FaUserPlus,
+  FaMoneyBillWave,
+  FaBan,
+  FaBriefcaseMedical,
+  FaHandshake,
+  FaComments,
+} from "react-icons/fa";
 import { CgFileDocument } from "react-icons/cg";
-import { FaBalanceScaleRight } from "react-icons/fa";
 import ContactBanner from "../components/ContactBanner";
 
 const LaboralPageStyles = styled.div`
@@ -141,65 +154,62 @@ export default function Laboral() {
         <div className="top-section">
           <div className="left__left">
             <ContactInfoItem
-              icon={<FaBalanceScale />}
+              icon={<FaFileSignature />}
               text="REDACCIÓN DE CONTRATOS DE TRABAJO"
             />
             <ContactInfoItem
-              icon={<MdAccountBalance />}
+              icon={<FaUsers />}
               text="NEGOCIACIÓN DE CONVENIOS COLECTIVOS"
             />
             <ContactInfoItem
-              icon={<FaBalanceScaleLeft />}
+              icon={<FaGavel />}
               text="REPRESENTACIÓN EN JUICIOS LABORALES"
             />
             <ContactInfoItem
-              icon={<CgFileDocument />}
+              icon={<FaUserSlash />}
               text="DESPIDOS Y TERMINACIÓN LABORAL"
             />
             <ContactInfoItem
-              icon={<FaBalanceScaleRight />}
+              icon={<FaExclamationCircle />}
               text="RECLAMACIONES LABORALES"
             />
             <ContactInfoItem
-              icon={<FaBalanceScale />}
+              icon={<FaShieldAlt />}
               text="ASESORAMIENTO SOBRE SEGURIDAD SOCIAL"
             />
             <ContactInfoItem
-              icon={<MdAccountBalance />}
+              icon={<FaIdCard />}
               text="OBTENCIÓN DE PERMISOS DE TRABAJO"
             />
             <ContactInfoItem
-              icon={<FaBalanceScaleLeft />}
+              icon={<FaHandHoldingUsd />}
               text="INDEMNIZACIONES LABORALES"
             />
           </div>
           <div className="right__right">
             <ContactInfoItem
-              icon={<FaBalanceScale />}
+              icon={<FaUserPlus />}
               text="AFILIACIÓN A LA SEGURIDAD SOCIAL"
             />
             <ContactInfoItem
-              icon={<MdAccountBalance />}
+              icon={<FaMoneyBillWave />}
               text="RECLAMACIÓN DE PRESTACIONES SOCIALES"
             />
+            <ContactInfoItem icon={<FaBan />} text="ACOSO LABORAL" />
             <ContactInfoItem
-              icon={<FaBalanceScaleLeft />}
-              text="ACOSO LABORAL"
-            />
-            <ContactInfoItem
-              icon={<CgFileDocument />}
+              icon={<FaBalanceScale />}
               text="DISCRIMINACIÓN LABORAL"
             />
             <ContactInfoItem
-              icon={<FaBalanceScaleRight />}
+              icon={<FaBriefcaseMedical />}
               text="ACCIDENTES DE TRABAJO"
             />
             <ContactInfoItem
-              icon={<FaBalanceScale />}
+              icon={<FaHandshake />}
               text="NEGOCIACIÓN DE FINIQUITOS"
             />
             <ContactInfoItem
-              icon={<MdAccountBalance />}
+              icon={<FaComments />}
               text="REPRESENTACIÓN EN MEDIACIONES Y ARBITRAJES"
             />
           </div>

@@ -3,9 +3,16 @@ import styled from "styled-components";
 import PText from "../components/PText";
 import TributarioImg from "../assets/images/tributario.jpg";
 import ContactInfoItem from "../components/ContactInfoItem";
-import { FaBalanceScale } from "react-icons/fa";
-import { MdAccountBalance } from "react-icons/md";
-import { FaBalanceScaleLeft } from "react-icons/fa";
+import {
+  FaBalanceScale,
+  FaCalculator,
+  FaBuilding,
+  FaSearch,
+  FaHandHoldingUsd,
+  FaGlobe,
+  FaGavel,
+  FaClipboardList,
+} from "react-icons/fa";
 import { CgFileDocument } from "react-icons/cg";
 import ContactBanner from "../components/ContactBanner";
 
@@ -125,7 +132,7 @@ export default function Tributario() {
             </div>
           </div>
           <div className="right">
-            <img src={TributarioImg} alt="penal" />
+            <img src={TributarioImg} alt="tributario" />
           </div>
         </div>
       </div>
@@ -139,37 +146,34 @@ export default function Tributario() {
         <div className="top-section">
           <div className="left__left">
             <ContactInfoItem
-              icon={<FaBalanceScale />}
+              icon={<FaCalculator />}
               text="PLANIFICACIÓN FISCAL"
             />
             <ContactInfoItem
-              icon={<MdAccountBalance />}
+              icon={<FaBuilding />}
               text="GESTIONES ANTE EL SERVICIO DE RENTAS INTERNAS (SRI)"
             />
+            <ContactInfoItem icon={<FaSearch />} text="AUDITORÍA TRIBUTARIA" />
             <ContactInfoItem
-              icon={<FaBalanceScaleLeft />}
-              text="AUDITORÍA TRIBUTARIA"
-            />
-            <ContactInfoItem
-              icon={<CgFileDocument />}
+              icon={<FaClipboardList />}
               text="REVISIÓN DE OBLIGACIONES FISCALES"
             />
           </div>
           <div className="right__right">
             <ContactInfoItem
-              icon={<FaBalanceScale />}
+              icon={<FaHandHoldingUsd />}
               text="DECLARACIONES FISCALES"
             />
             <ContactInfoItem
-              icon={<MdAccountBalance />}
+              icon={<FaBalanceScale />}
               text="RECURSOS Y APELACIONES"
             />
             <ContactInfoItem
-              icon={<FaBalanceScaleLeft />}
+              icon={<FaGlobe />}
               text="ASESORÍA EN MATERIA DE TRIBUTACIÓN INTERNACIONAL"
             />
             <ContactInfoItem
-              icon={<CgFileDocument />}
+              icon={<FaGavel />}
               text="DEFENSA EN LITIGIOS FISCALES"
             />
           </div>

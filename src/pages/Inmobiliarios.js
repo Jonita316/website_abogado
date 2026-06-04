@@ -3,11 +3,19 @@ import styled from "styled-components";
 import PText from "../components/PText";
 import InmobiliariosImg from "../assets/images/inmobiliarios.jpg";
 import ContactInfoItem from "../components/ContactInfoItem";
-import { FaBalanceScale } from "react-icons/fa";
-import { MdAccountBalance } from "react-icons/md";
-import { FaBalanceScaleLeft } from "react-icons/fa";
-import { CgFileDocument } from "react-icons/cg";
-import { FaBalanceScaleRight } from "react-icons/fa";
+import {
+  FaSearch,
+  FaCalculator,
+  FaFileContract,
+  FaKey,
+  FaHandshake,
+  FaMap,
+  FaChartLine,
+  FaFileAlt,
+  FaHardHat,
+  FaBuilding,
+  FaEdit,
+} from "react-icons/fa";
 import ContactBanner from "../components/ContactBanner";
 
 const InmobiliariosPageStyles = styled.div`
@@ -127,7 +135,7 @@ export default function Inmobiliarios() {
             </div>
           </div>
           <div className="right">
-            <img src={InmobiliariosImg} alt="penal" />
+            <img src={InmobiliariosImg} alt="inmobiliarios" />
           </div>
         </div>
       </div>
@@ -141,45 +149,39 @@ export default function Inmobiliarios() {
         <div className="top-section">
           <div className="left__left">
             <ContactInfoItem
-              icon={<FaBalanceScale />}
+              icon={<FaSearch />}
               text="EVALUACIÓN Y VERIFICACIÓN DE INMUEBLES"
             />
             <ContactInfoItem
-              icon={<MdAccountBalance />}
+              icon={<FaCalculator />}
               text="ASESORÍA EN MATERIA HIPOTECARIA"
             />
             <ContactInfoItem
-              icon={<FaBalanceScaleLeft />}
+              icon={<FaFileContract />}
               text="CONTRATOS DE COMPRAVENTA"
             />
-            <ContactInfoItem icon={<CgFileDocument />} text="ARRENDAMIENTO" />
-            <ContactInfoItem icon={<FaBalanceScaleRight />} text="COMODATO" />
-            <ContactInfoItem
-              icon={<FaBalanceScale />}
-              text="REGULARIZACIÓN DE ÁREAS"
-            />
+            <ContactInfoItem icon={<FaKey />} text="ARRENDAMIENTO" />
+            <ContactInfoItem icon={<FaHandshake />} text="COMODATO" />
+            <ContactInfoItem icon={<FaMap />} text="REGULARIZACIÓN DE ÁREAS" />
           </div>
           <div className="right__right">
             <ContactInfoItem
-              icon={<FaBalanceScale />}
+              icon={<FaChartLine />}
               text="ASESORÍA LEGAL EN INVERSIONES INMOBILIARIAS"
             />
             <ContactInfoItem
-              icon={<MdAccountBalance />}
+              icon={<FaFileAlt />}
               text="INSCRIPCIÓN DE INMUEBLES EN EL REGISTRO DE LA PROPIEDAD"
             />
             <ContactInfoItem
-              icon={<FaBalanceScaleLeft />}
+              icon={<FaHardHat />}
               text="OBTENCIÓN DE PERMISOS DE CONSTRUCCIÓN"
             />
             <ContactInfoItem
-              icon={<CgFileDocument />}
+              icon={<FaBuilding />}
               text="PROPIEDAD HORIZONTAL"
             />
-            <ContactInfoItem
-              icon={<FaBalanceScaleRight />}
-              text="ACTUALIZACIÓN CATASTRAL"
-            />
+            <ContactInfoItem icon={<FaEdit />} text="ACTUALIZACIÓN CATASTRAL" />
           </div>
         </div>
       </div>

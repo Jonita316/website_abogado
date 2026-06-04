@@ -3,11 +3,20 @@ import styled from "styled-components";
 import PText from "../components/PText";
 import TestamentoImg from "../assets/images/testamento.jpg";
 import ContactInfoItem from "../components/ContactInfoItem";
-import { FaBalanceScale } from "react-icons/fa";
-import { MdAccountBalance } from "react-icons/md";
-import { FaBalanceScaleLeft } from "react-icons/fa";
-import { CgFileDocument } from "react-icons/cg";
-import { FaBalanceScaleRight } from "react-icons/fa";
+import {
+  FaHandHoldingUsd,
+  FaPenNib,
+  FaFileSignature,
+  FaUsers,
+  FaComments,
+  FaIdCard,
+  FaHandshake,
+  FaListUl,
+  FaMoneyCheck,
+  FaKey,
+  FaGavel,
+  FaFolder,
+} from "react-icons/fa";
 import ContactBanner from "../components/ContactBanner";
 
 const HerenciasPageStyles = styled.div`
@@ -126,7 +135,7 @@ export default function Herencias() {
             </div>
           </div>
           <div className="right">
-            <img src={TestamentoImg} alt="penal" />
+            <img src={TestamentoImg} alt="herencias" />
           </div>
         </div>
       </div>
@@ -140,55 +149,49 @@ export default function Herencias() {
         <div className="top-section">
           <div className="left__left">
             <ContactInfoItem
-              icon={<FaBalanceScale />}
+              icon={<FaHandHoldingUsd />}
               text="RECLAMACIÓN DE HERENCIA"
             />
             <ContactInfoItem
-              icon={<MdAccountBalance />}
+              icon={<FaPenNib />}
               text="ELABORACIÓN DE TESTAMENTOS"
             />
             <ContactInfoItem
-              icon={<FaBalanceScaleLeft />}
+              icon={<FaFileSignature />}
               text="TESTAMENTO ABIERTO"
             />
             <ContactInfoItem
-              icon={<CgFileDocument />}
+              icon={<FaUsers />}
               text="TRAMITACIÓN DE SUCESIÓN INTESTADA"
             />
             <ContactInfoItem
-              icon={<FaBalanceScaleRight />}
+              icon={<FaComments />}
               text="MEDIACIÓN EN ASUNTOS SUCESORIOS"
             />
             <ContactInfoItem
-              icon={<FaBalanceScale />}
+              icon={<FaIdCard />}
               text="DECLARACIONES DE HEREDEROS"
             />
           </div>
           <div className="right__right">
             <ContactInfoItem
-              icon={<FaBalanceScale />}
+              icon={<FaHandshake />}
               text="ACUERDOS DE DISTRIBUCIÓN"
             />
             <ContactInfoItem
-              icon={<MdAccountBalance />}
+              icon={<FaListUl />}
               text="INVENTARIO Y AVALÚO DE BIENES"
             />
             <ContactInfoItem
-              icon={<FaBalanceScaleLeft />}
+              icon={<FaMoneyCheck />}
               text="IMPUESTO AL PATRIMONIO HEREDADO"
             />
+            <ContactInfoItem icon={<FaKey />} text="POSESIÓN HEREDITARIA" />
             <ContactInfoItem
-              icon={<CgFileDocument />}
-              text="POSESIÓN HEREDITARIA"
-            />
-            <ContactInfoItem
-              icon={<FaBalanceScaleRight />}
+              icon={<FaGavel />}
               text="IMPUGNACIÓN DE TESTAMENTOS"
             />
-            <ContactInfoItem
-              icon={<FaBalanceScale />}
-              text="INSCRIPCIÓN DE BIENES"
-            />
+            <ContactInfoItem icon={<FaFolder />} text="INSCRIPCIÓN DE BIENES" />
           </div>
         </div>
       </div>

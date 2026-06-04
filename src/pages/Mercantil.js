@@ -3,11 +3,22 @@ import styled from "styled-components";
 import PText from "../components/PText";
 import MercantilImg from "../assets/images/mercantil.jpg";
 import ContactInfoItem from "../components/ContactInfoItem";
-import { FaBalanceScale } from "react-icons/fa";
-import { MdAccountBalance } from "react-icons/md";
-import { FaBalanceScaleLeft } from "react-icons/fa";
+import {
+  FaBuilding,
+  FaIdCard,
+  FaUsers,
+  FaFileContract,
+  FaSync,
+  FaChartLine,
+  FaBriefcase,
+  FaHandHoldingUsd,
+  FaCalculator,
+  FaRegistered,
+  FaFileSignature,
+  FaGavel,
+  FaChartPie,
+} from "react-icons/fa";
 import { CgFileDocument } from "react-icons/cg";
-import { FaBalanceScaleRight } from "react-icons/fa";
 import ContactBanner from "../components/ContactBanner";
 
 const MercantilPageStyles = styled.div`
@@ -140,61 +151,61 @@ export default function Mercantil() {
         <div className="top-section">
           <div className="left__left">
             <ContactInfoItem
-              icon={<FaBalanceScale />}
+              icon={<FaBuilding />}
               text="CONSTITUCIÓN DE EMPRESAS"
             />
             <ContactInfoItem
-              icon={<MdAccountBalance />}
+              icon={<FaIdCard />}
               text="OBTENCIÓN DE PERMISOS Y LICENCIAS PARA OPERAR"
             />
             <ContactInfoItem
-              icon={<FaBalanceScaleLeft />}
+              icon={<FaUsers />}
               text="REDACCIÓN DE PACTOS DE ACCIONISTAS"
             />
             <ContactInfoItem
-              icon={<CgFileDocument />}
+              icon={<FaFileContract />}
               text="LIQUIDACIÓN Y DISOLUCIÓN DE EMPRESAS"
             />
             <ContactInfoItem
-              icon={<FaBalanceScaleRight />}
+              icon={<FaSync />}
               text="REACTIVACIÓN DE COMPAÑÍAS"
             />
             <ContactInfoItem
-              icon={<FaBalanceScale />}
+              icon={<FaChartLine />}
               text="AUMENTOS Y REDUCCIÓN DE CAPITAL"
             />
             <ContactInfoItem
-              icon={<MdAccountBalance />}
+              icon={<FaBriefcase />}
               text="ASESORÍA LEGAL EN TEMAS SOCIETARIOS"
             />
           </div>
           <div className="right__right">
             <ContactInfoItem
-              icon={<FaBalanceScale />}
+              icon={<FaHandHoldingUsd />}
               text="OBTENCIÓN DE PRÉSTAMOS Y LÍNEAS DE CRÉDITO"
             />
             <ContactInfoItem
-              icon={<MdAccountBalance />}
+              icon={<FaCalculator />}
               text="REESTRUCTURACIÓN DE DEUDA"
             />
             <ContactInfoItem
-              icon={<FaBalanceScaleLeft />}
+              icon={<FaRegistered />}
               text="REGISTRO DE PATENTES, MARCAS Y DERECHOS DE AUTOR"
             />
             <ContactInfoItem
-              icon={<CgFileDocument />}
+              icon={<FaFileSignature />}
               text="NEGOCIACIÓN Y ELABORACIÓN DE ACUERDOS DE LICENCIA"
             />
             <ContactInfoItem
-              icon={<FaBalanceScaleRight />}
+              icon={<FaGavel />}
               text="LITIGIOS EN MATERIA DE PROPIEDAD INTELECTUAL"
             />
             <ContactInfoItem
-              icon={<FaBalanceScale />}
+              icon={<CgFileDocument />}
               text="REDACCIÓN Y REVISIÓN DE CONTRATOS COMERCIALES"
             />
             <ContactInfoItem
-              icon={<MdAccountBalance />}
+              icon={<FaChartPie />}
               text="PLANIFICACIÓN FISCAL PARA EMPRESAS"
             />
           </div>

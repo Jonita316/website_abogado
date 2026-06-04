@@ -3,11 +3,20 @@ import styled from "styled-components";
 import PText from "../components/PText";
 import DivorcioImg from "../assets/images/divorcio.png";
 import ContactInfoItem from "../components/ContactInfoItem";
-import { FaBalanceScale } from "react-icons/fa";
-import { MdAccountBalance } from "react-icons/md";
-import { FaBalanceScaleLeft } from "react-icons/fa";
+import {
+  FaHandshake,
+  FaGavel,
+  FaRocket,
+  FaCalculator,
+  FaHandHoldingUsd,
+  FaCalendarAlt,
+  FaUsers,
+  FaFileSignature,
+  FaComments,
+  FaHome,
+  FaBaby,
+} from "react-icons/fa";
 import { CgFileDocument } from "react-icons/cg";
-import { FaBalanceScaleRight } from "react-icons/fa";
 import ContactBanner from "../components/ContactBanner";
 
 const DivorcioPageStyles = styled.div`
@@ -120,8 +129,8 @@ export default function Divorcio() {
               <PText>
                 UN PROCESO DE DIVORCIO PUEDE SER COMPLEJO Y EMOCIONALMENTE
                 DESAFIANTE. COMO ABOGADO, LE ACOMPAÑO EN CADA ETAPA PARA
-                GARANTIZAR UNA SEPARACIÓN EQUITATIVA, ROTEGIENDO SUS DERECHOS EN
-                CUESTIONES DE PATRIMONIO, CUSTODIA Y PENSIÓN ALIMENTICIA. MI
+                GARANTIZAR UNA SEPARACIÓN EQUITATIVA, PROTEGIENDO SUS DERECHOS
+                EN CUESTIONES DE PATRIMONIO, CUSTODIA Y PENSIÓN ALIMENTICIA. MI
                 OBJETIVO ES LOGRAR UNA RESOLUCIÓN JUSTA Y FAVORABLE PARA USTED
               </PText>
             </div>
@@ -141,52 +150,40 @@ export default function Divorcio() {
         <div className="top-section">
           <div className="left__left">
             <ContactInfoItem
-              icon={<FaBalanceScale />}
+              icon={<FaHandshake />}
               text="DIVORCIO POR MUTUO ACUERDO"
             />
+            <ContactInfoItem icon={<FaGavel />} text="DIVORCIO CONTENCIOSO" />
+            <ContactInfoItem icon={<FaRocket />} text="DIVORCIO EXPRESS" />
             <ContactInfoItem
-              icon={<MdAccountBalance />}
-              text="DIVORCIO CONTENCIOSO"
-            />
-            <ContactInfoItem
-              icon={<FaBalanceScaleLeft />}
-              text="DIVORCIO EXPRESS"
-            />
-            <ContactInfoItem
-              icon={<CgFileDocument />}
+              icon={<FaCalculator />}
               text="LIQUIDACIÓN DE LA SOCIEDAD CONYUGAL"
             />
             <ContactInfoItem
-              icon={<FaBalanceScaleRight />}
+              icon={<FaHandHoldingUsd />}
               text="PENSIÓN ALIMENTICIA"
             />
             <ContactInfoItem
-              icon={<FaBalanceScale />}
+              icon={<FaCalendarAlt />}
               text="RÉGIMEN DE VISITAS"
             />
           </div>
           <div className="right__right">
-            <ContactInfoItem icon={<FaBalanceScale />} text="PATRIA POTESTAD" />
+            <ContactInfoItem icon={<FaUsers />} text="PATRIA POTESTAD" />
             <ContactInfoItem
-              icon={<MdAccountBalance />}
+              icon={<FaFileSignature />}
               text="REDACCIÓN DEL ACUERDO DE DIVORCIO"
             />
             <ContactInfoItem
-              icon={<FaBalanceScaleLeft />}
+              icon={<CgFileDocument />}
               text="PRESENTACIÓN DE LA DEMANDA DE DIVORCIO"
             />
             <ContactInfoItem
-              icon={<CgFileDocument />}
+              icon={<FaComments />}
               text="NEGOCIACIÓN DE LOS TÉRMINOS DEL DIVORCIO"
             />
-            <ContactInfoItem
-              icon={<FaBalanceScaleRight />}
-              text="DIVISIÓN DE BIENES"
-            />
-            <ContactInfoItem
-              icon={<FaBalanceScale />}
-              text="CUSTODIA DE HIJOS"
-            />
+            <ContactInfoItem icon={<FaHome />} text="DIVISIÓN DE BIENES" />
+            <ContactInfoItem icon={<FaBaby />} text="CUSTODIA DE HIJOS" />
           </div>
         </div>
       </div>

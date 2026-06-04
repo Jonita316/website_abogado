@@ -3,11 +3,21 @@ import styled from "styled-components";
 import PText from "../components/PText";
 import CivilImg from "../assets/images/civil.png";
 import ContactInfoItem from "../components/ContactInfoItem";
-import { FaBalanceScale } from "react-icons/fa";
-import { MdAccountBalance } from "react-icons/md";
-import { FaBalanceScaleLeft } from "react-icons/fa";
+import {
+  FaBalanceScale,
+  FaPiggyBank,
+  FaBriefcase,
+  FaGavel,
+  FaBuilding,
+  FaFileSignature,
+  FaHome,
+  FaKey,
+  FaUserFriends,
+  FaExclamationTriangle,
+  FaShieldAlt,
+  FaUserCheck,
+} from "react-icons/fa";
 import { CgFileDocument } from "react-icons/cg";
-import { FaBalanceScaleRight } from "react-icons/fa";
 import ContactBanner from "../components/ContactBanner";
 
 const CivilesPageStyles = styled.div`
@@ -142,54 +152,48 @@ export default function Civiles() {
         <div className="top-section">
           <div className="left__left">
             <ContactInfoItem
-              icon={<FaBalanceScale />}
+              icon={<FaPiggyBank />}
               text="ASESORÍA PATRIMONIAL Y SUCESORIA"
             />
             <ContactInfoItem
-              icon={<MdAccountBalance />}
+              icon={<FaBriefcase />}
               text="NEGOCIOS FIDUCIARIOS"
             />
             <ContactInfoItem
-              icon={<FaBalanceScaleLeft />}
+              icon={<FaGavel />}
               text="LITIGIOS Y DEFENSA EN JUICIOS CIVILES"
             />
             <ContactInfoItem
               icon={<CgFileDocument />}
               text="DEMANDAS CIVILES"
             />
+            <ContactInfoItem icon={<FaBuilding />} text="MATERIA SOCIETARIA" />
             <ContactInfoItem
-              icon={<FaBalanceScaleRight />}
-              text="MATERIA SOCIETARIA"
-            />
-            <ContactInfoItem
-              icon={<FaBalanceScale />}
+              icon={<FaFileSignature />}
               text="CONTRATOS Y ACUERDOS"
             />
-            <ContactInfoItem
-              icon={<MdAccountBalance />}
-              text="DERECHO DE PROPIEDAD"
-            />
+            <ContactInfoItem icon={<FaHome />} text="DERECHO DE PROPIEDAD" />
           </div>
           <div className="right__right">
             <ContactInfoItem
-              icon={<FaBalanceScale />}
+              icon={<FaKey />}
               text="COMPRAVENTA DE BIENES INMUEBLES"
             />
             <ContactInfoItem
-              icon={<MdAccountBalance />}
+              icon={<FaBalanceScale />}
               text="RESPONSABILIDAD CIVIL CONTRACTUAL Y EXTRACONTRACTUAL"
             />
             <ContactInfoItem
-              icon={<FaBalanceScaleLeft />}
+              icon={<FaUserFriends />}
               text="DERECHO DE LAS PERSONAS Y FAMILIA"
             />
             <ContactInfoItem
-              icon={<CgFileDocument />}
+              icon={<FaExclamationTriangle />}
               text="DAÑOS Y PERJUICIOS"
             />
-            <ContactInfoItem icon={<FaBalanceScaleRight />} text="SEGUROS" />
+            <ContactInfoItem icon={<FaShieldAlt />} text="SEGUROS" />
             <ContactInfoItem
-              icon={<FaBalanceScale />}
+              icon={<FaUserCheck />}
               text="CANCELACIÓN DE ANTECEDENTES PENALES"
             />
           </div>

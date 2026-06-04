@@ -3,11 +3,26 @@ import styled from "styled-components";
 import PText from "../components/PText";
 import FamiliaImg from "../assets/images/familia.png";
 import ContactInfoItem from "../components/ContactInfoItem";
-import { FaBalanceScale } from "react-icons/fa";
-import { MdAccountBalance } from "react-icons/md";
-import { FaBalanceScaleLeft } from "react-icons/fa";
-import { CgFileDocument } from "react-icons/cg";
-import { FaBalanceScaleRight } from "react-icons/fa";
+import {
+  FaFileSignature,
+  FaHeartBroken,
+  FaBan,
+  FaCalculator,
+  FaUsers,
+  FaCalendarAlt,
+  FaBaby,
+  FaIdCard,
+  FaDna,
+  FaUserShield,
+  FaHandsHelping,
+  FaExclamationTriangle,
+  FaHandHoldingUsd,
+  FaScroll,
+  FaUserSlash,
+  FaRunning,
+  FaSignature,
+  FaBabyCarriage,
+} from "react-icons/fa";
 import ContactBanner from "../components/ContactBanner";
 
 const FamiliaPageStyles = styled.div`
@@ -113,7 +128,7 @@ export default function Familia() {
             </p>
             <h2 className="about__heading">DERECHO DE FAMILIA</h2>
             <p className="about__subheading">
-              <span>TPROTEGIENDO SUS VÍNCULOS Y BIENESTAR</span>
+              <span>PROTEGIENDO SUS VÍNCULOS Y BIENESTAR</span>
             </p>
             <div className="about__info">
               <PText>
@@ -141,67 +156,55 @@ export default function Familia() {
         <div className="top-section">
           <div className="left__left">
             <ContactInfoItem
-              icon={<FaBalanceScale />}
+              icon={<FaFileSignature />}
               text="REDACCIÓN Y FIRMA DE CAPITULACIONES MATRIMONIALES"
             />
-            <ContactInfoItem icon={<MdAccountBalance />} text="DIVORCIOS" />
+            <ContactInfoItem icon={<FaHeartBroken />} text="DIVORCIOS" />
+            <ContactInfoItem icon={<FaBan />} text="NULIDAD MATRIMONIAL" />
             <ContactInfoItem
-              icon={<FaBalanceScaleLeft />}
-              text="NULIDAD MATRIMONIAL"
-            />
-            <ContactInfoItem
-              icon={<CgFileDocument />}
+              icon={<FaCalculator />}
               text="LIQUIDACIÓN DE LA SOCIEDAD CONYUGAL"
             />
+            <ContactInfoItem icon={<FaUsers />} text="PATRIA POTESTAD" />
             <ContactInfoItem
-              icon={<FaBalanceScaleRight />}
-              text="PATRIA POTESTAD"
-            />
-            <ContactInfoItem
-              icon={<FaBalanceScale />}
+              icon={<FaCalendarAlt />}
               text="RÉGIMEN DE VISITAS"
             />
+            <ContactInfoItem icon={<FaBaby />} text="TENENCIA DE HIJOS" />
             <ContactInfoItem
-              icon={<MdAccountBalance />}
-              text="TENENCIA DE HIJOS"
-            />
-            <ContactInfoItem
-              icon={<FaBalanceScaleLeft />}
+              icon={<FaIdCard />}
               text="RECONOCIMIENTO DE HIJOS"
             />
             <ContactInfoItem
-              icon={<CgFileDocument />}
+              icon={<FaDna />}
               text="IMPUGNACIÓN DE LA FILIACIÓN"
             />
           </div>
           <div className="right__right">
             <ContactInfoItem
-              icon={<FaBalanceScale />}
+              icon={<FaUserShield />}
               text="DECLARACIÓN DE INTERDICCIÓN"
             />
             <ContactInfoItem
-              icon={<MdAccountBalance />}
+              icon={<FaHandsHelping />}
               text="NOMBRAMIENTO DE TUTOR O CURADOR"
             />
             <ContactInfoItem
-              icon={<FaBalanceScaleLeft />}
+              icon={<FaExclamationTriangle />}
               text="VIOLENCIA INTRAFAMILIAR"
             />
             <ContactInfoItem
-              icon={<CgFileDocument />}
+              icon={<FaHandHoldingUsd />}
               text="PENSIONES DE ALIMENTOS"
             />
-            <ContactInfoItem icon={<FaBalanceScaleRight />} text="HERENCIAS" />
+            <ContactInfoItem icon={<FaScroll />} text="HERENCIAS" />
             <ContactInfoItem
-              icon={<FaBalanceScale />}
+              icon={<FaUserSlash />}
               text="DECLARACIÓN DE AUSENCIA"
             />
-            <ContactInfoItem icon={<MdAccountBalance />} text="EMANCIPACIÓN" />
-            <ContactInfoItem
-              icon={<FaBalanceScaleLeft />}
-              text="CAMBIO DE NOMBRE"
-            />
-            <ContactInfoItem icon={<FaBalanceScaleRight />} text="ADOPCIÓN" />
+            <ContactInfoItem icon={<FaRunning />} text="EMANCIPACIÓN" />
+            <ContactInfoItem icon={<FaSignature />} text="CAMBIO DE NOMBRE" />
+            <ContactInfoItem icon={<FaBabyCarriage />} text="ADOPCIÓN" />
           </div>
         </div>
       </div>

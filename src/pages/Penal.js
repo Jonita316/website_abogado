@@ -4,11 +4,22 @@ import styled from "styled-components";
 import PText from "../components/PText";
 import PenalImg from "../assets/images/penal.png";
 import ContactInfoItem from "../components/ContactInfoItem";
-import { FaBalanceScale } from "react-icons/fa";
+import {
+  FaBalanceScale,
+  FaGavel,
+  FaSearch,
+  FaHandshake,
+  FaShieldAlt,
+  FaUnlock,
+  FaHandHoldingUsd,
+  FaUserFriends,
+  FaHome,
+  FaLaptopCode,
+  FaMoneyBillWave,
+  FaGlobe,
+} from "react-icons/fa";
 import { MdAccountBalance } from "react-icons/md";
-import { FaBalanceScaleLeft } from "react-icons/fa";
 import { CgFileDocument } from "react-icons/cg";
-import { FaBalanceScaleRight } from "react-icons/fa";
 import ContactBanner from "../components/ContactBanner";
 
 const PenalPageStyles = styled.div`
@@ -143,73 +154,73 @@ export default function Penal() {
         <div className="top-section">
           <div className="left__left">
             <ContactInfoItem
-              icon={<FaBalanceScale />}
+              icon={<FaSearch />}
               text="ASESORAMIENTO LEGAL EN CASO DE INVESTIGACIÓN PENAL"
             />
 
             <ContactInfoItem
-              icon={<MdAccountBalance />}
+              icon={<FaGavel />}
               text="DEFENSA EN CASO DE JUICIO PENAL"
             />
 
             <ContactInfoItem
-              icon={<FaBalanceScaleLeft />}
+              icon={<FaBalanceScale />}
               text="REPRESENTACIÓN EN CASO DE APELACIÓN"
             />
 
             <ContactInfoItem
-              icon={<CgFileDocument />}
+              icon={<FaHandshake />}
               text="NEGOCIACIÓN DE ACUERDOS CON LA FISCALÍA"
             />
 
             <ContactInfoItem
-              icon={<FaBalanceScaleRight />}
+              icon={<FaShieldAlt />}
               text="SOLICITUD DE MEDIDAS CAUTELARES"
             />
 
             <ContactInfoItem
-              icon={<FaBalanceScale />}
+              icon={<CgFileDocument />}
               text="RECURSOS PENALES"
             />
 
             <ContactInfoItem
-              icon={<MdAccountBalance />}
+              icon={<FaUnlock />}
               text="INDULTOS Y CONMUTACIONES DE PENAS"
             />
           </div>
           <div className="right__right">
             <ContactInfoItem
-              icon={<FaBalanceScale />}
+              icon={<FaHandHoldingUsd />}
               text="REPARACIÓN DEL DAÑO"
             />
 
             <ContactInfoItem
-              icon={<MdAccountBalance />}
+              icon={<FaUserFriends />}
               text="DELITOS CONTRA LAS PERSONAS Y LA VIDA"
             />
 
             <ContactInfoItem
-              icon={<FaBalanceScaleLeft />}
+              icon={<FaHome />}
               text="DELITOS CONTRA EL PATRIMONIO"
             />
 
             <ContactInfoItem
-              icon={<CgFileDocument />}
+              icon={<MdAccountBalance />}
               text="DELITOS CONTRA LA ADMINISTRACIÓN PÚBLICA"
             />
 
             <ContactInfoItem
-              icon={<FaBalanceScaleRight />}
+              icon={<FaLaptopCode />}
               text="DELITOS INFORMÁTICOS"
             />
 
             <ContactInfoItem
-              icon={<FaBalanceScale />}
+              icon={<FaMoneyBillWave />}
               text="DELITOS ECONÓMICOS"
             />
 
             <ContactInfoItem
-              icon={<MdAccountBalance />}
+              icon={<FaGlobe />}
               text="DELITOS INTERNACIONALES"
             />
           </div>
