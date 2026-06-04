@@ -88,8 +88,17 @@ export default function ContactForm() {
     }
     setError("");
 
-    const professionalWhatsappMessage = `Hola, mi nombre es ${name} y les escribo para solicitar asesoría legal. Mi correo de contacto es ${email}. A continuación, detallo mi consulta: ${message}`;
-    const whatsappUrl = `https://api.whatsapp.com/send?phone=593968873896&text=${encodeURIComponent(
+    const professionalWhatsappMessage = `
+*MENSAJE DE CONTACTO*
+
+*NOMBRE:* ${name.toUpperCase()}
+*CORREO:* ${email.toUpperCase()}
+
+*DETALLE DE MENSAJE:*
+${message}
+    `.trim();
+
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=593993972833&text=${encodeURIComponent(
       professionalWhatsappMessage,
     )}`;
     window.open(whatsappUrl, "_blank");

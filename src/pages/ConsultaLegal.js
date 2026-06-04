@@ -554,7 +554,7 @@ export default function ConsultaLegal() {
       return setError("POR FAVOR, LLENE EL CAMPO: DETALLE DE LA CONSULTA");
 
     // Número de WhatsApp del abogado (incluir código de país sin el '+')
-    const lawyerPhoneNumber = "593968873896";
+    const lawyerPhoneNumber = "593993972833";
 
     const message = `
 *NUEVA CONSULTA LEGAL (FORMULARIO WEB)*
@@ -605,7 +605,7 @@ ${formData.message}
     if (!appointmentData.message)
       return setAppointmentError("POR FAVOR, DETALLE SU CONSULTA");
 
-    const lawyerPhoneNumber = "593968873896";
+    const lawyerPhoneNumber = "593993972833";
 
     const message = `
 *Solicitud de Cita Presencial*
@@ -771,7 +771,7 @@ ${appointmentData.message}
               </div>
               <div
                 className="consulta__phone-right"
-                onClick={() => (window.location.href = "tel:0968873896")}
+                onClick={() => (window.location.href = "tel:0993972833")}
               >
                 <MdPhoneInTalk className="consulta__phone-big-icon" />
                 <p className="consulta__phone-cta">LLAMA AHORA</p>
@@ -786,7 +786,7 @@ ${appointmentData.message}
               <div
                 className="consulta__phone-right"
                 onClick={() =>
-                  window.open("https://wa.me/593968873896", "_blank")
+                  window.open("https://wa.me/593993972833", "_blank")
                 }
               >
                 <FaWhatsapp className="consulta__phone-big-icon" />
