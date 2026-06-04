@@ -20,7 +20,6 @@ import {
   FaHandshake,
   FaComments,
 } from "react-icons/fa";
-import { CgFileDocument } from "react-icons/cg";
 import ContactBanner from "../components/ContactBanner";
 
 const LaboralPageStyles = styled.div`
