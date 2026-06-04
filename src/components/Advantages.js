@@ -13,7 +13,14 @@ import { FaRocket } from "react-icons/fa";
 const AdvantagesStyles = styled.div`
   padding: 10rem 0;
   .contactBanner__wrapper {
-    background-color: #1e293b;
+    background: linear-gradient(
+      300deg,
+      #7e7d7d 10%,
+      #555555 25%,
+      #3b3b3b 50%,
+      #272727 75%,
+      #272727 100%
+    );
     border-radius: 12px;
     padding: 5rem 0rem;
     text-align: center;
