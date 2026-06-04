@@ -108,9 +108,9 @@ export default function About() {
         <div className="top-section">
           <div className="left">
             <p className="about__subheading">
-              HOLA, SOY <span>GABRIEL RODRIGUEZ</span>
+              HOLA, SOY <span>GABRIEL RODRÍGUEZ</span>
             </p>
-            <h2 className="about__heading">DOCTOR EN JURISPRUDENCIA</h2>
+            <h2 className="about__heading">ABOGADO DE LOS TRIBUNALES</h2>
             <div className="about__info">
               <PText>
                 COMO ABOGADO, MI PRINCIPAL COMPROMISO ES DEFENDER LOS DERECHOS
@@ -140,103 +140,92 @@ export default function About() {
             </div>
           </div>
           <div className="right">
-            <img src={AboutImg} alt="Gabriel Rodriguez img" />
+            <img src={AboutImg} alt="GABRIEL RODRÍGUEZ IMG" />
           </div>
         </div>
 
         <div className="about__info__items">
           <div className="about__info__item">
-            <h2 className="about__info__heading">Datos personales</h2>
+            <h2 className="about__info__heading">DATOS PERSONALES</h2>
             <PText>
               <span className="info-line">
-                <strong>Nombre:</strong> José Gabriel Rodríguez Merino
+                <strong>NOMBRE:</strong> JOSÉ GABRIEL RODRÍGUEZ MERINO
               </span>
               <span className="info-line">
-                <strong>Cédula:</strong> 1715792451
+                <strong>CÉDULA:</strong> 1715792451
+              </span>
+
+              <span className="info-line">
+                <strong>TELÉFONO:</strong> 0993972833
               </span>
               <span className="info-line">
-                <strong>Fecha de nacimiento:</strong> 1 de abril de 1980
-              </span>
-              <span className="info-line">
-                <strong>Lugar de nacimiento:</strong> Loja, Cariamanga
-              </span>
-              <span className="info-line">
-                <strong>Estado civil:</strong> Divorciado
-              </span>
-              <span className="info-line">
-                <strong>Dirección:</strong> Turubamba Alto, SMB. M17 Casa 5
-              </span>
-              <span className="info-line">
-                <strong>Teléfono:</strong> 0993972833
-              </span>
-              <span className="info-line">
-                <strong>Email:</strong> g.rodriguezm0730@gmail.com
+                <strong>EMAIL:</strong> g.rodriguezm0730@gmail.com
               </span>
             </PText>
           </div>
 
           <div className="about__info__item">
-            <h2 className="about__info__heading">Formación académica</h2>
+            <h2 className="about__info__heading">FORMACIÓN ACADÉMICA</h2>
             <PText>
               <span className="info-line">
-                <strong>Universitarios:</strong> Abogado de los Tribunales y
-                Juzgados de la República del Ecuador – Universidad de los
-                Hemisferios (Mención Derecho Procesal)
+                <strong>UNIVERSITARIOS:</strong> ABOGADO DE LOS TRIBUNALES Y
+                JUZGADOS DE LA REPÚBLICA DEL ECUADOR – UNIVERSIDAD DE LOS
+                HEMISFERIOS (MENCIÓN DERECHO PROCESAL)
               </span>
               <span className="info-line">
-                <strong>Estudios secundarios:</strong> Colegio Particular “Maria
-                Augusta Urrutia de Escudero”
+                <strong>ESTUDIOS SECUNDARIOS:</strong> COLEGIO PARTICULAR “MARIA
+                AUGUSTA URRUTIA DE ESCUDERO”
               </span>
               <span className="info-line">
-                <strong>Estudios primarios:</strong> Escuela Juan Pablo II
+                <strong>ESTUDIOS PRIMARIOS:</strong> ESCUELA JUAN PABLO II
               </span>
             </PText>
           </div>
 
           <div className="about__info__item">
-            <h2 className="about__info__heading">Experiencia laboral</h2>
+            <h2 className="about__info__heading">EXPERIENCIA LABORAL</h2>
             <PText>
               <span className="info-line">
-                <strong>Trust Fiduciaria</strong> — Mayo 2004 – Agosto 2017
+                <strong>TRUST FIDUCIARIA</strong> — MAYO 2004 – AGOSTO 2017
               </span>
-              <span className="info-line">Cargo: Asesor Legal Fiduciario</span>
+              <span className="info-line">CARGO: ASESOR LEGAL FIDUCIARIO</span>
               <span className="info-line">
-                Responsabilidades principales: revisión de avisos de
-                incumplimiento, confirmación de garantías, elaboración de cartas
-                de notificación y retiro, coordinación de cuadrillas para
-                retiros de vehículos, ingreso y control de información en
-                sistemas y reportes, elaboración de KPI y atención al cliente.
+                RESPONSABILIDADES PRINCIPALES: REVISIÓN DE AVISOS DE
+                INCUMPLIMIENTO, CONFIRMACIÓN DE GARANTÍAS, ELABORACIÓN DE CARTAS
+                DE NOTIFICACIÓN Y RETIRO, COORDINACIÓN DE CUADRILLAS PARA
+                RETIROS DE VEHÍCULOS, INGRESO Y CONTROL DE INFORMACIÓN EN
+                SISTEMAS Y REPORTES, ELABORACIÓN DE KPI Y ATENCIÓN AL CLIENTE.
               </span>
               <span className="info-line" style={{ marginTop: "2rem" }}>
-                <strong>Law-Firm Rojas y Rodríguez Abogados</strong> — Abril
-                2018 – Presente
+                <strong>LAW-FIRM ROJAS Y RODRÍGUEZ ABOGADOS</strong> — ABRIL
+                2018 – PRESENTE
               </span>
               <span className="info-line">
-                Cargo: Abogado litigante patrocinador
+                CARGO: ABOGADO LITIGANTE PATROCINADOR
               </span>
               <span className="info-line">
-                Áreas: civil, penal, laboral, administrativo, tránsito,
-                societario.
+                ÁREAS: CIVIL, PENAL, LABORAL, ADMINISTRATIVO, TRÁNSITO,
+                SOCIETARIO.
               </span>
             </PText>
           </div>
 
           <div className="about__info__item">
-            <h2 className="about__info__heading">Referencias personales</h2>
+            <h2 className="about__info__heading">REFERENCIAS PERSONALES</h2>
             <PText>
               <span className="info-line">
-                Dr. Juan Pablo Aguirre — Dpto. Legal, Diners Club — 0992716706
+                DR. JUAN PABLO AGUIRRE — DPTO. LEGAL, DINERS CLUB — 0992716706
               </span>
               <span className="info-line">
-                Dr. Miguel Lima Endara — Estudio Jurídico Lima Asociados —
+                DR. MIGUEL LIMA ENDARA — ESTUDIO JURÍDICO LIMA ASOCIADOS —
                 0992735112
               </span>
               <span className="info-line">
-                Dr. Gabriel Rojas — Law-Firm Rojas y Rodríguez Abogados —
+                DR. GABRIEL ROJAS — LAW-FIRM ROJAS Y RODRÍGUEZ ABOGADOS —
                 0995088604
               </span>
               <span className="info-line">
-                Dr. Armando Mayorga — Estudio Jurídico Mayorga Asociados —
+                DR. ARMANDO MAYORGA — ESTUDIO JURÍDICO MAYORGA ASOCIADOS —
                 0992767318
               </span>
             </PText>
