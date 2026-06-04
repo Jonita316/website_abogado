@@ -143,8 +143,8 @@ export default function Divorcio() {
       <div className="container">
         <p className="about__subheading__up">
           <span>
-            CONOCIMIENTO PROFUNDO EN LAS DIFERENTES SITUACIONES DEL DERECHO
-            FAMILIAR
+            EXPERIENCIA ESPECIALIZADA EN PROCESOS DE DIVORCIO Y DISOLUCIÓN
+            MATRIMONIAL
           </span>
         </p>
         <div className="top-section">
