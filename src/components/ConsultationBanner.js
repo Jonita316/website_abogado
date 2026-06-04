@@ -20,7 +20,14 @@ const ConsultationBannerStyles = styled.div`
   }
 
   .consultation__item {
-    background-color: var(--dark-bg);
+    background: linear-gradient(
+      50deg,
+      #7e7d7d 10%,
+      #555555 25%,
+      #3b3b3b 50%,
+      #555555 75%,
+      #555555 100%
+    );
     padding: 2rem;
     border-radius: 12px;
     text-align: left;
@@ -42,13 +49,22 @@ const ConsultationBannerStyles = styled.div`
     height: 8rem;
     flex-shrink: 0;
     border-radius: 50%;
-    background-color: #000;
+    background: linear-gradient(
+      300deg,
+      #7e7d7d 10%,
+      #555555 25%,
+      #3b3b3b 50%,
+      #272727 75%,
+      #7e7d7d 100%
+    );
     display: flex;
+
+    border: 1px solid #333;
+    box-shadow: 3px 3px 3px #000;
     align-items: center;
     justify-content: center;
     margin-bottom: 0;
     margin-right: 1.5rem;
-    color: var(--gray-1);
     /* Aplicamos la animación aquí */
     animation: ${float} 3s ease-in-out infinite;
     svg {
