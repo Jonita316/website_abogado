@@ -56,8 +56,10 @@ const AboutPageStyles = styled.div`
     color: var(--gray-1);
   }
   .about__info__item .info-line {
-    display: block;
-    margin-bottom: 1.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem 0;
+    margin-bottom: 1rem;
   }
   .about__info__item .para {
     max-width: 100%;
@@ -66,8 +68,9 @@ const AboutPageStyles = styled.div`
     line-height: 2.4rem;
   }
   .about__info__item strong {
-    display: inline-block;
-    min-width: 180px;
+    display: inline-flex;
+    min-width: 80px;
+    margin-right: 0.8rem;
     font-weight: 700;
     color: var(--white);
   }
