@@ -52,8 +52,19 @@ const AboutPageStyles = styled.div`
     gap: 4rem;
   }
   .about__info__item {
-    margin-bottom: 4rem;
+    background-color: var(--deep-dark);
+    padding: 3rem;
+    border-radius: 12px;
+    border: 1px solid var(--gray-2);
+    transition: all 0.3s ease;
     color: var(--gray-1);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+
+    &:hover {
+      border-color: var(--gray-1);
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    }
   }
   .about__info__item .info-line {
     display: flex;
@@ -65,7 +76,7 @@ const AboutPageStyles = styled.div`
     max-width: 100%;
     margin: 0;
     font-size: 1.6rem;
-    line-height: 2.4rem;
+    line-height: 1.8;
   }
   .about__info__item strong {
     display: inline-flex;
@@ -77,7 +88,12 @@ const AboutPageStyles = styled.div`
   .about__info__heading {
     font-size: 2.8rem;
     text-transform: uppercase;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
+    border-bottom: 2px solid var(--gray-2);
+    padding-bottom: 1rem;
+    color: var(--white);
+    letter-spacing: 2px;
+    font-family: "Montserrat Bold";
   }
   @media only screen and (max-width: 768px) {
     padding: 10rem 0;
