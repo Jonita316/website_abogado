@@ -58,11 +58,11 @@ export default function Footer() {
     <FooterStyles>
       <div className="container">
         <div className="footer__col1">
-          <h1 className="footer__col1__title">GABRIEL RODRIGUEZ</h1>
+          <h1 className="footer__col1__title">GABRIEL RODRÍGUEZ</h1>
           <PText>
-            PROFESIONAL DEL DERECHO CON EXPERIENCIA EN MÚLTIPLES ÁREAS LEGALES,
-            COMPROMETIDO CON BRINDAR SOLUCIONES EFECTIVAS Y UN ASESORAMIENTO
-            PERSONALIZADO
+            DEFENSA LEGAL INTEGRAL CON LOS MÁS ALTOS ESTÁNDARES DE ÉTICA Y
+            PROFESIONALISMO. COMPROMETIDOS CON LA PROTECCIÓN DE SUS DERECHOS Y
+            LA OBTENCIÓN DE RESULTADOS EFECTIVOS EN CADA PROCESO JURÍDICO.
           </PText>
         </div>
         <div className="footer__col2">
@@ -79,6 +79,12 @@ export default function Footer() {
                 path: "/about",
                 type: "Link",
               },
+              {
+                title: "CONCULTA LEGAL",
+                path: "/ConsultaLegal",
+                type: "Link",
+              },
+
               {
                 title: "AREAS LEGALES",
                 path: "/projects",
@@ -117,15 +123,11 @@ export default function Footer() {
             links={[
               {
                 title: "FACEBOOK",
-                path: "http://facebook.com",
+                path: "https://www.facebook.com/gabriel.rodriguez.711593",
               },
               {
                 title: "INSTAGRAM",
-                path: "http://instagram.com",
-              },
-              {
-                title: "TWITTER",
-                path: "http://twitter.com",
+                path: "https://www.instagram.com/gabrielrodriguez556/",
               },
             ]}
           />
@@ -133,7 +135,7 @@ export default function Footer() {
       </div>
       <div className="copyright">
         <div className="container">
-          <PText>&copy;PUCKCODERS 2025</PText>
+          <PText>JONYSOFT 2026</PText>
         </div>
       </div>
     </FooterStyles>

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import Checkmark from "../assets/images/hero.png"; // Using hero.png as a placeholder
 
 const FormStyles = styled.form`
   width: 100%;
@@ -101,7 +100,6 @@ export default function ContactForm() {
   if (submitted) {
     return (
       <SuccessMessageStyles>
-        <img src={Checkmark} alt="Success" />
         <h2>¡Mensaje en camino!</h2>
         <p>
           Gracias por contactarnos. Hemos abierto WhatsApp para que puedas
