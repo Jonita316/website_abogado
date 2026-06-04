@@ -22,6 +22,7 @@ const HeroStyles = styled.div`
     font-size: 2rem;
     margin-bottom: -4rem;
     position: relative;
+
     span {
       display: inline-block;
       width: 100%;

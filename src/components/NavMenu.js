@@ -11,7 +11,16 @@ const NavMenuStyles = styled.div`
   left: 0;
   width: 100%;
   padding: 1rem 0;
-  background: var(--dark-bg);
+  background: linear-gradient(
+    180deg,
+    #7e7d7d 10%,
+    #555555 25%,
+    #3b3b3b 50%,
+    #272727 75%,
+    #000 100%
+  );
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--gray-2);
   ul {
     max-width: 1200px;
     width: 90%;
@@ -22,7 +31,14 @@ const NavMenuStyles = styled.div`
       border-radius: 8px;
       transition: 0.3s ease background-color;
       &:hover {
-        background-color: var(--gray-2);
+        background: linear-gradient(
+          360deg,
+          #7e7d7d 10%,
+          #555555 25%,
+          #3b3b3b 50%,
+          #272727 75%,
+          #000 100%
+        );
       }
     }
     a {

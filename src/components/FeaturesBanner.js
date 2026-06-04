@@ -23,8 +23,15 @@ const FeaturesBannerStyles = styled.div`
 
   .features__item {
     padding: 2.5rem;
-    background-color: var(--secondary-bg);
-    border: 1px solid var(--border-subtle);
+    background: linear-gradient(
+      300deg,
+      #7e7d7d 10%,
+      #555555 25%,
+      #3b3b3b 50%,
+      #272727 75%,
+      #000 100%
+    );
+    border: 1px solid #333;
     border-radius: 8px;
     text-align: left;
     transition: all 0.3s ease;
@@ -32,11 +39,12 @@ const FeaturesBannerStyles = styled.div`
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
+    box-shadow: 3px 3px 3px #000;
 
     &:hover {
       transform: translateY(-5px);
-      border-color: var(--accent-gold);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+      border-color: #555;
+      box-shadow: 6px 6px 6px #000;
     }
   }
 
@@ -46,13 +54,22 @@ const FeaturesBannerStyles = styled.div`
     height: 8rem;
     flex-shrink: 0;
     border-radius: 12px;
-    background-color: rgba(197, 160, 89, 0.1); /* Fondo dorado muy sutil */
+    background: linear-gradient(
+      300deg,
+      #7e7d7d 10%,
+      #555555 25%,
+      #3b3b3b 50%,
+      #272727 75%,
+      #7e7d7d 100%
+    );
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 0;
     margin-right: 1.5rem;
     color: var(--accent-gold);
+
+    box-shadow: 3px 3px 3px #000;
     svg {
       width: 5rem;
       height: 5rem;
