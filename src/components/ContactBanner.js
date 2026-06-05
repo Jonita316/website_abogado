@@ -11,6 +11,8 @@ const ContactBannerStyles = styled.div`
     padding: 5rem 0rem;
     text-align: center;
     box-shadow: 6px 6px 6px #000;
+    position: relative;
+    z-index: 1;
   }
   .contactBanner__heading {
     font-size: 4rem;
