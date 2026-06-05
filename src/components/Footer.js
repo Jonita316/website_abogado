@@ -104,15 +104,12 @@ export default function Footer() {
             links={[
               {
                 title: "0993972833",
-                path: "0993972833",
               },
               {
                 title: "g.rodriguezm0730@gmail.com",
-                path: "jg.rodriguezm0730@gmail.com",
               },
               {
                 title: "Turumbamba alto, Quito, Pichimcha, Ecuador",
-                path: "http://google.com/maps",
               },
             ]}
           />
