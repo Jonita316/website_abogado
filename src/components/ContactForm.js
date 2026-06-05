@@ -22,6 +22,8 @@ const FormStyles = styled.form`
     border-radius: 8px;
     margin-top: 1rem;
     box-shadow: 6px 6px 6px #000;
+    position: relative;
+    z-index: 1;
   }
   textarea {
     min-height: 250px;
@@ -29,7 +31,7 @@ const FormStyles = styled.form`
   }
   button[type="submit"] {
     background-color: var(--gray-1);
-    color: var(--black);
+    color: #000000;
     font-size: 2rem;
     display: inline-block;
     outline: none;
@@ -38,6 +40,8 @@ const FormStyles = styled.form`
     border-radius: 8px;
     cursor: pointer;
     box-shadow: 6px 6px 6px #000;
+    position: relative;
+    z-index: 1;
   }
   .error {
     color: red;
@@ -53,6 +57,8 @@ const SuccessMessageStyles = styled.div`
   border-radius: 8px;
   border: 2px solid var(--gray-1);
   box-shadow: 6px 6px 6px #000;
+  position: relative;
+  z-index: 1;
 
   img {
     width: 100px;
