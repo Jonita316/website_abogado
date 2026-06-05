@@ -43,9 +43,13 @@ const HeroStyles = styled.div`
   }
   .hero__info {
     margin-top: -18rem;
+    position: relative;
+    z-index: 10;
+    color: #000 !important;
     p {
       background-color: rgba(0, 0, 0, 0.6);
       backdrop-filter: blur(5px);
+      color: #fff !important;
       padding: 2rem;
       border-radius: 20px;
       display: inline-block;
