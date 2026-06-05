@@ -12,11 +12,18 @@ const ButtonStyle = styled.div`
     border-radius: 8px;
     display: inline-block;
     border: 2px solid var(--gray-1);
-    color: ${(props) => (props.outline ? "var(--gray-1)" : "black")};
+    color: ${(props) => (props.outline ? "var(--gray-1)" : "#000000")};
     box-shadow: 6px 6px 6px #000;
     transition:
-      "color 0.3s",
+      color 0.3s,
       transform 0.3s;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+
+    &:hover {
+      transform: translateY(-0.3rem);
+    }
   }
 
   @media only screen and (max-width: 768px) {
@@ -33,16 +40,7 @@ export default function Button({
 }) {
   return (
     <ButtonStyle outline={outline} className="button-wrapper">
-      <Link
-        className="button"
-        to={btnLink}
-        onMouseEnter={(e) =>
-          (e.currentTarget.style.transform = "translateY(-0.3rem)")
-        }
-        onMouseLeave={(e) =>
-          (e.currentTarget.style.transform = "translateY(0)")
-        }
-      >
+      <Link className="button" to={btnLink}>
         {btnText}
       </Link>
     </ButtonStyle>
