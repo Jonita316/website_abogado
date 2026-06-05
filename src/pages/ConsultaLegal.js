@@ -284,6 +284,8 @@ const ConsultaLegalStyles = styled.div`
     border-top: 4px solid #d4af37;
     text-align: left;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    position: relative;
+    z-index: 1;
   }
   .consulta__form-heading {
     font-size: 2.6rem;
@@ -342,15 +344,18 @@ const ConsultaLegalStyles = styled.div`
   }
   .form__submit-btn {
     background-color: var(--gray-1);
-    color: var(--deep-dark);
+    color: #000000;
     font-size: 2rem;
     font-weight: bold;
+    display: inline-block;
     padding: 1.5rem 6rem;
     border: none;
     border-radius: 8px;
     cursor: pointer;
     transition: 0.3s ease all;
     text-transform: uppercase;
+    position: relative;
+    z-index: 1;
     &:hover {
       background-color: var(--white);
       transform: translateY(-3px);
